@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightyellow"
+    tools:context=".RRInfoActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/RR"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/green"
+        android:textSize="32sp"
+        android:typeface="serif"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/backRR"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="26dp"
+        android:background="@color/green" 
+        android:text="@string/back"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/informationRR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:text=" "
+        android:scrollbars="vertical"
+        android:textColor="@color/maroon"
+        android:scrollbarStyle="insideOverlay" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/algorithm"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/green"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+</RelativeLayout>

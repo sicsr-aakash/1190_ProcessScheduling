@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".FCFSMenuActivity" >
+
+    <Button
+        android:id="@+id/nextbtnFCFS"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="41dp"
+        android:background="@color/green"
+        android:text="@string/next"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="500dp"
+        android:text="@string/algorithm"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/green"
+        android:textSize="35sp"
+        android:typeface="serif"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/infoFCFS"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+  	    android:layout_marginLeft="300dp" 
+  	    android:layout_marginTop="400dp"
+        android:background="@color/green"
+        android:text="@string/info"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextbtnFCFS"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_marginBottom="52dp"
+        android:text="@string/process2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView01"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="21dp"
+        android:text="@string/process1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView02"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="49dp"
+        android:layout_toRightOf="@+id/TextView02"
+        android:text="@string/arrival"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView04"
+        android:layout_alignBottom="@+id/TextView04"
+        android:layout_marginLeft="51dp"
+        android:layout_toRightOf="@+id/TextView04"
+        android:text="@string/burst"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/arrivalTimeFCFS1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_alignLeft="@+id/TextView04"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/arrivalTimeFCFS2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignLeft="@+id/arrivalTimeFCFS1"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/arrivalTimeFCFS3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView03"
+        android:layout_alignBottom="@+id/TextView03"
+        android:layout_alignLeft="@+id/arrivalTimeFCFS2"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextbtnFCFS"
+        android:layout_toLeftOf="@+id/TextView04"
+        android:text="@string/process3"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/burstTimeFCFS1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/arrivalTimeFCFS1"
+        android:layout_alignBottom="@+id/arrivalTimeFCFS1"
+        android:layout_alignLeft="@+id/TextView05"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/burstTimeFCFS2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/arrivalTimeFCFS2"
+        android:layout_alignBottom="@+id/arrivalTimeFCFS2"
+        android:layout_alignLeft="@+id/burstTimeFCFS1"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/burstTimeFCFS3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/arrivalTimeFCFS3"
+        android:layout_alignBottom="@+id/arrivalTimeFCFS3"
+        android:layout_alignLeft="@+id/burstTimeFCFS2"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="92dp"
+        android:text="@string/fcfs"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/green"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/nextbtnFCFS1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/burstTimeFCFS3"
+        android:layout_alignTop="@+id/infoFCFS"
+        android:background="@color/green"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:textSize="26sp"
+        android:text="@string/next" />
+
+</RelativeLayout>

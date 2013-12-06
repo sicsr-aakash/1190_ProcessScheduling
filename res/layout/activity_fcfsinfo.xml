@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightyellow"
+    tools:context=".FCFSInfoActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/fcfs"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/green"
+        android:textSize="32sp"
+        android:typeface="serif"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/informationFCFS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:text=" "
+        android:scrollbars="vertical"
+        android:textColor="@color/maroon"
+        android:scrollbarStyle="insideOverlay" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/algorithm"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/green"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/backFCFS"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginRight="20dp"
+        android:background="@color/green"
+     	android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        android:text="@string/back" />
+
+</RelativeLayout>

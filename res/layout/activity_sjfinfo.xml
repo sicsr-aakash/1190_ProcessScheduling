@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightyellow"
+    tools:context=".SJFInfoActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/SJF"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/green"
+        android:textSize="32sp"
+        android:typeface="serif"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:text="@string/algorithm"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/green"
+        android:textSize="32sp"
+        android:typeface="serif"
+        android:layout_marginLeft="320dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/backSJF"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:background="@color/green"
+        android:text="@string/back"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/informationSJF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:textColor="@color/maroon"
+        android:text=" " />
+
+</RelativeLayout>
